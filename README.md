@@ -23,5 +23,4 @@ Extracting the Firmware from the device
 2. Find the mtd block partitions of the flash chip using the command **cat /proc/mtd**
 3. Finally copy the content of each mtd blocks in the SD card using the command **cat /dev/mtdblock0 >> mmcblk0/flashdump.bin**
 
-**NOTE:** Run the above command for each mtdblock
-4. The complete content of the flash chip is now dumped to the SD card and can be used for further exploitation
+**NOTE:** Run the above command for each mtdblock and complete content of the flash chip is now dumped to the SD card and can be used for further exploitation
