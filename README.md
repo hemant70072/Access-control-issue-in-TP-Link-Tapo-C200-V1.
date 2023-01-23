@@ -1,4 +1,9 @@
-# Firmware-extraction-and-root-shell-access-of-IP-camera
+# CVE-2022-41505: Gaining root access in TP Link Tapo C200 V1.
+
+The TP Link Tapo C200 V1 has a vulnerability which can be exploited to gain the root shell acess of the device which can further be used to gain sensitive information, firmware extraction or executing arbitrary commands.
+
+The steps provided below can be helpful to know the process for find this vulnerability. 
+Firmware-extraction-and-root-shell-access-of-IP-camera
 Exploiting the UART shell to get the access of root shell and dumping the content of flash chip (firmware) in the SD card 
 
 
