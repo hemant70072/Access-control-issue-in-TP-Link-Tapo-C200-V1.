@@ -1,4 +1,4 @@
-# CVE-2022-41505: Gaining root access in TP Link Tapo C200 V1.
+# CVE-2022-41505: Access control issue in TP Link Tapo C200 V1. allowing attacker to gain root access, sensitive information or execute arbitrary command
 
 The TP Link Tapo C200 V1 has a vulnerability which can be exploited to gain the root shell acess of the device which can further be used to gain sensitive information, firmware extraction or executing arbitrary commands.
 
@@ -26,7 +26,7 @@ Getting the **U-Boot** shell :
 Getting the root shell :
 
 
-1. Once the U-Boot shell is accessible, change the path of the **init** environment variable to **init=/bin/sh**
+1. Once the U-Boot shell is accessible, change the path of the **init** environment variable to **init=/bin/sh** using **setenve** command (There are many commands available in this shell which can be used to overwrite the memory)
 2. Now run the content of **bootcmd** as command in the shell
 3. Upon running the bootcmd the device will boot normally and give the root shell
 
